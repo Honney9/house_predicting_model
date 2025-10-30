@@ -96,5 +96,6 @@ else:
         ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'${x:,.0f}'))
         st.pyplot(fig)
 
-st.markdown("© 2025 Developed by Honney Walia", unsafe_allow_html=True)
+st.markdown("---")
+st.caption("© 2025 Developed by Honney Walia", unsafe_allow_html=True)
 
