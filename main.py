@@ -5,21 +5,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
-# ------------------------------------------
+
 # STREAMLIT PAGE CONFIG
-# ------------------------------------------
 st.set_page_config(page_title="🏠 House Price Prediction", layout="centered")
 st.title("🏠 House Price Prediction App")
 st.caption("A comparison of Simple and Multiple Linear Regression models using scikit-learn")
 
-# ------------------------------------------
 # SIDEBAR
-# ------------------------------------------
 model_type = st.sidebar.radio("Select Model", ["Simple Linear Regression", "Multiple Linear Regression"])
 
-# ==========================================
+
 # SIMPLE LINEAR REGRESSION
-# ==========================================
 if model_type == "Simple Linear Regression":
     st.header("📉 Simple Linear Regression (Size → Price)")
 
@@ -51,9 +47,8 @@ if model_type == "Simple Linear Regression":
         ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'${x:,.0f}'))
         st.pyplot(fig)
 
-# ==========================================
+
 # MULTIPLE LINEAR REGRESSION
-# ==========================================
 else:
     st.header("🏡 Multiple Linear Regression (Size + Features → Price)")
 
@@ -101,5 +96,5 @@ else:
         ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'${x:,.0f}'))
         st.pyplot(fig)
 
-st.markdown("---")
-st.caption("Developed with ❤️ using Streamlit and scikit-learn")
+st.markdown("© 2025 Developed by Honney Walia", unsafe_allow_html=True)
+
