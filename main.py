@@ -36,7 +36,7 @@ if model_type == "Simple Linear Regression":
         st.success(f"💰 Predicted Price: **${predicted_price:,.2f}**")
 
         # Plot
-        fig, ax = plt.subplots(figsize=(8, 5))
+        fig, ax = plt.subplots(figsize=(6, 4))
         ax.scatter(data["size"], data["price"], color="gray", alpha=0.6, label="Training Data")
         ax.scatter(size, predicted_price, color="red", s=100, label="Predicted Point")
         ax.set_xlabel("Size (sq.ft)")
@@ -85,7 +85,7 @@ else:
         st.success(f"💰 Predicted Price: **${predicted_price:,.2f}**")
 
         # Visualization
-        fig, ax = plt.subplots(figsize=(8, 5))
+        fig, ax = plt.subplots(figsize=(6, 4))
         ax.scatter(data["size"], data["price"], alpha=0.5, label="Training Data", color="gray")
         ax.scatter(size, predicted_price, color="red", s=100, label="Your Prediction")
         ax.set_xlabel("Size (sq.ft)")
