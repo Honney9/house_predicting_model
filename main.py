@@ -7,7 +7,7 @@ from matplotlib.ticker import FuncFormatter
 
 
 # STREAMLIT PAGE CONFIG
-st.set_page_config(page_title="🏠 House Price Prediction", layout="centered")
+st.set_page_config(page_title="🏠 House Price Prediction", layout="wide")
 st.title("🏠 House Price Prediction App")
 st.caption("A comparison of Simple and Multiple Linear Regression models using scikit-learn")
 
